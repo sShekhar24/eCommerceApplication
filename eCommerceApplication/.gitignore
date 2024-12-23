@@ -31,3 +31,30 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Compiled class files
+*.class
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+
+# Eclipse-specific files
+.project
+.classpath
+.settings/
+
+# Maven and Gradle output
+target/
+build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Sensitive data
+application-*.properties
+

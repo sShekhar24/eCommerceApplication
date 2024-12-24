@@ -1,5 +1,7 @@
 package com.ecommerce.entity;
 
+import org.springframework.security.core.userdetails.User;
+
 import com.ecommerce.common.BaseEntity;
 
 import jakarta.persistence.Column;

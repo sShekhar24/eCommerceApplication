@@ -16,6 +16,7 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "vendors")
 public class Vendor extends BaseEntity {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -27,4 +28,30 @@ public class Vendor extends BaseEntity {
     private List<Inventory> inventoryItems;
 
     // Getters and Setters
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getBusinessName() {
+        return businessName;
+    }
+
+    public void setBusinessName(String businessName) {
+        this.businessName = businessName;
+    }
+
+    public List<Inventory> getInventoryItems() {
+        return inventoryItems;
+    }
+
+    public void setInventoryItems(List<Inventory> inventoryItems) {
+        this.inventoryItems = inventoryItems;
+    }
+
+    // Optionally, you can add toString(), equals(), and hashCode() methods if needed.
 }

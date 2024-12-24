@@ -53,6 +53,31 @@
       <artifactId>spring-boot-starter-data-jpa</artifactId>
     </dependency>
 
+<!-- JJWT API for JWT Token Management -->
+    <dependency>
+        <groupId>io.jsonwebtoken</groupId>
+        <artifactId>jjwt-api</artifactId>
+        <version>0.11.5</version>
+    </dependency>
+    
+      <!-- JJWT Implementation -->
+    <dependency>
+        <groupId>io.jsonwebtoken</groupId>
+        <artifactId>jjwt-impl</artifactId>
+        <version>0.11.5</version>
+        <scope>runtime</scope>
+    </dependency>
+    
+    <!-- JJWT Jackson for JSON Parsing -->
+    <dependency>
+        <groupId>io.jsonwebtoken</groupId>
+        <artifactId>jjwt-jackson</artifactId>
+        <version>0.11.5</version>
+        <scope>runtime</scope>
+    </dependency>
+    
+    
+
     <!-- Spring Security: Provides security features like authentication and authorization -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -70,6 +95,8 @@
       <groupId>org.springframework.ai</groupId>
       <artifactId>spring-ai-openai-spring-boot-starter</artifactId>
     </dependency>
+    
+   
 
     <!-- Spring Boot DevTools: Helps with hot reloading during development (only in runtime scope) -->
     <dependency>
@@ -86,12 +113,6 @@
       <scope>runtime</scope> <!-- Only required at runtime, not in compile scope -->
     </dependency>
 
-    <!-- Lombok: A Java library that helps reduce boilerplate code, such as getters, setters, constructors -->
-    <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <optional>true</optional> <!-- Optional, as it's used mainly during development to reduce boilerplate -->
-    </dependency>
 
     <!-- Spring Boot Starter Test: Provides testing tools for Spring Boot applications -->
     <dependency>

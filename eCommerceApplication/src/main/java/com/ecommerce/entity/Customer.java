@@ -16,6 +16,7 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "customers")
 public class Customer extends BaseEntity {
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -28,4 +29,28 @@ public class Customer extends BaseEntity {
     private User user;
 
     // Getters and Setters
+    
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 }

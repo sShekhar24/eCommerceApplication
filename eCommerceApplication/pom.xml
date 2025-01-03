@@ -110,7 +110,7 @@
     <dependency>
       <groupId>com.mysql</groupId>
       <artifactId>mysql-connector-j</artifactId>
-      <scope>runtime</scope> <!-- Only required at runtime, not in compile scope -->
+    <!--  <scope>runtime</scope>  Only required at runtime, not in compile scope -->
     </dependency>
 
 

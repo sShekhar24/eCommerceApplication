@@ -53,7 +53,7 @@
       <artifactId>spring-boot-starter-data-jpa</artifactId>
     </dependency>
 
-<!-- JJWT API for JWT Token Management -->
+	<!-- JJWT API for JWT Token Management -->
     <dependency>
         <groupId>io.jsonwebtoken</groupId>
         <artifactId>jjwt-api</artifactId>
@@ -61,7 +61,7 @@
     </dependency>
     
       <!-- JJWT Implementation -->
-    <dependency>
+      <dependency>
         <groupId>io.jsonwebtoken</groupId>
         <artifactId>jjwt-impl</artifactId>
         <version>0.11.5</version>
@@ -89,14 +89,6 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
-
-    <!-- Spring AI OpenAI Starter: Integration with OpenAI's GPT models (e.g., ChatGPT) for AI capabilities -->
-    <dependency>
-      <groupId>org.springframework.ai</groupId>
-      <artifactId>spring-ai-openai-spring-boot-starter</artifactId>
-    </dependency>
-    
-   
 
     <!-- Spring Boot DevTools: Helps with hot reloading during development (only in runtime scope) -->
     <dependency>
@@ -134,26 +126,12 @@
       <scope>test</scope> <!-- Only used for testing -->
     </dependency>
     
-    <!-- SpringDoc OpenAPI Starter: Enables OpenAPI documentation for your REST APIs -->
-    <dependency>
-      <groupId>org.springdoc</groupId>
-      <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-      <version>2.2.0</version>
-    </dependency>
 
   </dependencies>
 
   <dependencyManagement>
     <dependencies>
 
-      <!-- Spring AI BOM (Bill of Materials): Ensures consistent versioning for Spring AI dependencies -->
-      <dependency>
-        <groupId>org.springframework.ai</groupId>
-        <artifactId>spring-ai-bom</artifactId>
-        <version>${spring-ai.version}</version>
-        <type>pom</type> <!-- BOM file type -->
-        <scope>import</scope> <!-- This imports dependency versions from the BOM -->
-      </dependency>
 
     </dependencies>
   </dependencyManagement>
